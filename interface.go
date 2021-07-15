@@ -17,4 +17,13 @@ func main()  {
 	fmt.Printf("%T\n", pp)
 	pArr := &[3]int{1, 2, 6} 
   fmt.Println((*pArr)[2])
+
+	type Point struct {
+		X, Y int
+	}
+	var pt Point
+	pt.X = 10
+	pt.Y = 20
+	fmt.Println(pt.X)
+	fmt.Println(pt.Y)
 }
