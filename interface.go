@@ -15,4 +15,6 @@ func main()  {
 	fmt.Println(i)
 	pp := & p
 	fmt.Printf("%T\n", pp)
+	pArr := &[3]int{1, 2, 6} 
+  fmt.Println((*pArr)[2])
 }
