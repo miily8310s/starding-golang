@@ -26,4 +26,25 @@ func main()  {
 	pt.Y = 20
 	fmt.Println(pt.X)
 	fmt.Println(pt.Y)
+
+	type Feed struct {
+    Name string
+    Amount uint
+  }
+  
+  type Animal struct {
+    Name string
+    Feed Feed
+  }
+  
+  a := Animal{
+    Name: "Monkey",
+    Feed: Feed{
+      Name: "Banana",
+      Amount: 10,
+    },
+  } 
+  
+  fmt.Println(a.Name)
+  fmt.Println(a.Feed.Name)
 }
