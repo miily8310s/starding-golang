@@ -47,4 +47,16 @@ func main()  {
   
   fmt.Println(a.Name)
   fmt.Println(a.Feed.Name)
+
+	type Error interface {
+    Error() string
+  }
+  
+  func DoSomething() (int, error) {
+    return int , error
+  } 
+  _, err := DoSomething()
+  if err != nil {
+    fmt. Println(err.Error()) 
+  }
 }
